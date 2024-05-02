@@ -124,16 +124,17 @@ function dispalyGreetings(today){
 
     function dispalyClock(today) {
 
-        var hour = padZeros(twelveHour(today.getHours()));
+        // var hour = padZeros(twelveHour(today.getHours()));
+        var hour = padZeros(today.getHours());
         var minutes = padZeros(today.getMinutes());
         var seconds = padZeros(today.getSeconds());
        
-        if(today.getHours() >=12){
-            seconds+=" pm"
-        }
-        else{
-            seconds+=" am"
-        }
+        // if(today.getHours() >=12){
+        //     seconds+=" pm"
+        // }
+        // else{
+        //     seconds+=" am"
+        // }
        
         document.getElementById('hour').innerHTML = hour;
         document.getElementById('min').innerHTML = minutes;
